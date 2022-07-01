@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0044)http://wiki.ros.org/ROS/EnvironmentVariables -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="google-site-verification" content="CjkdY6BqKWAVmQ78_iSq6J7ZZ9AoL7-CjFVBYGg9FU4">
+<link rel="shortcut icon" href="http://wiki.ros.org/custom/favicon.ico" type="image/ico">
+<link rel="stylesheet" href="./ROS_EnvironmentVariables - ROS Wiki_files/bootstrap.min.css">
+<script type="text/javascript" async="" src="./ROS_EnvironmentVariables - ROS Wiki_files/ga.js.ダウンロード"></script><script src="./ROS_EnvironmentVariables - ROS Wiki_files/jquery-1.11.0.min.js.ダウンロード"></script>
+<script src="./ROS_EnvironmentVariables - ROS Wiki_files/bootstrap.min.js.ダウンロード"></script>
+<script type="text/javascript" src="./ROS_EnvironmentVariables - ROS Wiki_files/sorttable.js.ダウンロード"></script>
+<script type="text/javascript" src="./ROS_EnvironmentVariables - ROS Wiki_files/jquery.min.js.ダウンロード"></script>                         
+<script type="text/javascript" src="./ROS_EnvironmentVariables - ROS Wiki_files/seesaw.js.ダウンロード"></script> 
+<script type="text/javascript" src="./ROS_EnvironmentVariables - ROS Wiki_files/rosversion.js.ダウンロード"></script> 
+<!--script type="text/javascript" src="/custom/libraries/RGraph.common.core.js" ></script Used for metrics only, should be conditional, not at the top-->
+<!--script type="text/javascript" src="/custom/libraries/RGraph.bar.js" ></script same as above -->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17821189-2']);
+  _gaq.push(['_setDomainName', 'wiki.ros.org']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<meta name="robots" content="index,nofollow">
+
+<title>ROS/EnvironmentVariables - ROS Wiki</title>
+<script type="text/javascript" src="./ROS_EnvironmentVariables - ROS Wiki_files/common.js.ダウンロード"></script>
+
+<script type="text/javascript">
+<!--
+var search_hint = "Search";
+//-->
+</script>
+
+
+<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="./ROS_EnvironmentVariables - ROS Wiki_files/common.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="./ROS_EnvironmentVariables - ROS Wiki_files/screen.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="./ROS_EnvironmentVariables - ROS Wiki_files/print.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="projection" href="./ROS_EnvironmentVariables - ROS Wiki_files/projection.css">
+
+<!-- css only for MS IE6/IE7 browsers -->
+<!--[if lt IE 8]>
+   <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/moin_static197/rostheme/css/msie.css">
+<![endif]-->
+
+
+
+
+<link rel="canonical" href="http://wiki.ros.org/ROS/EnvironmentVariables">
+
+<link rel="Start" href="http://wiki.ros.org/Documentation">
+<link rel="Alternate" title="Wiki Markup" href="http://wiki.ros.org/ROS/EnvironmentVariables?action=raw">
+<link rel="Alternate" media="print" title="Print View" href="http://wiki.ros.org/ROS/EnvironmentVariables?action=print">
+<link rel="Up" href="http://wiki.ros.org/ROS">
+<link rel="Search" href="http://wiki.ros.org/FindPage">
+<link rel="Index" href="http://wiki.ros.org/TitleIndex">
+<link rel="Glossary" href="http://wiki.ros.org/WordIndex">
+<link rel="Help" href="http://wiki.ros.org/HelpOnFormatting">
+</head>
+
+<body lang="en" dir="ltr">
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./ROS_EnvironmentVariables - ROS Wiki_files/ga.js.ダウンロード" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-5950817-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<script type="text/javascript">
+<!--// Initialize search form
+var f = document.getElementById('searchform');
+if(f) f.getElementsByTagName('label')[0].style.display = 'none';
+var e = document.getElementById('searchinput');
+if(e) {
+  searchChange(e);
+  searchBlur(e);
+}
+
+function handleSubmit() {
+  var f = document.getElementById('searchform');
+  var t = document.getElementById('searchinput');
+  var r = document.getElementById('real_searchinput');
+
+  //alert("handleSubmit "+ t.value);
+  if(t.value.match(/review/)) {
+    r.value = t.value;
+  } else {
+    //r.value = t.value + " -PackageReviewCategory -StackReviewCategory -M3Review -DocReview -ApiReview -HelpOn -BadContent -LocalSpellingWords";
+    r.value = t.value + " -PackageReviewCategory -StackReviewCategory -DocReview -ApiReview";
+  }
+  //return validate(f);
+}
+//-->
+</script>
+
+<div id="dpage">
+  <div id="dpage-inner">
+    <div id="header"><div id="topnav">
+
+<!-- Alert box -->
+<!-- To enable/disable the alert box, uncomment/comment the block below and update the content below the button. -->
+<!--
+    <div class="alert alert-info alert-dismissable" style="text-align: center;">
+<script>
+jQuery(function( $ ){
+    alert_box_name = 'roswiki_roscon'
+    state = localStorage.getItem(alert_box_name);
+    if (!state) {
+      localStorage.setItem(alert_box_name, 'open');
+    }
+    state = localStorage.getItem(alert_box_name);
+    if (state == 'closed') {
+        $( '#topnav .alert' ).hide();
+    }
+    $( '.close' ).click(function () {
+	console.log('in .close.click');
+        localStorage.setItem(alert_box_name, 'closed');
+        $( '#topnav .alert' ).hide();
+  });
+});
+</script>
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <a href="http://roscon.ros.org">ROSCon 2017</a> will be in Vancouver, September 21-22! <br>
+      The last few years have sold out: register now and take advantage of discounted hotel rates</a>.
+    </div>
+-->
+<!-- End Alert box -->
+
+      <table id="topnav-table">
+        <tbody><tr>
+          <td width="300" valign="top"><a href="http://wiki.ros.org/"><img border="0" src="./ROS_EnvironmentVariables - ROS Wiki_files/ros_org.png" alt="ros.org" width="238" height="51"></a></td>
+          <td width="500" valign="middle">
+            <a href="http://www.ros.org/about-ros">About</a>
+            |
+            <a href="http://wiki.ros.org/Support">Support</a>
+            |
+            <a href="http://discourse.ros.org/">Discussion Forum</a>
+            |
+            <a href="http://status.ros.org/">Service Status</a>
+            |
+            <a href="http://answers.ros.org/">Q&amp;A answers.ros.org</a>
+          </td>
+
+      </tr>
+      <tr>
+        <td colspan="3" height="53" width="1024"><nobr><img src="./ROS_EnvironmentVariables - ROS Wiki_files/menu_left.png" width="17" height="53" alt=""><a href="http://wiki.ros.org/"><img border="0" src="./ROS_EnvironmentVariables - ROS Wiki_files/menu_documentation.png" width="237" height="53" alt="Documentation"></a><img src="./ROS_EnvironmentVariables - ROS Wiki_files/menu_spacer.png" width="69" height="53"><a href="https://index.ros.org/packages"><img border="0" src="./ROS_EnvironmentVariables - ROS Wiki_files/menu_browse_software.png" width="268" height="53" alt="Browse Software"></a><img src="./ROS_EnvironmentVariables - ROS Wiki_files/menu_spacer.png" width="69" height="53"><a href="https://discourse.ros.org/c/general"><img border="0" src="./ROS_EnvironmentVariables - ROS Wiki_files/menu_news.png" width="84" height="53" alt="News"></a><img src="./ROS_EnvironmentVariables - ROS Wiki_files/menu_spacer.png" width="69" height="53"><a href="http://wiki.ros.org/ROS/Installation"><img border="0" src="./ROS_EnvironmentVariables - ROS Wiki_files/menu_download.png" width="151" height="53" alt="Download"></a><img src="./ROS_EnvironmentVariables - ROS Wiki_files/menu_right.png" width="60" height="53"></nobr></td>
+
+      </tr>
+    </tbody></table> <!-- topnav-table -->
+
+    </div> <!-- /#topav -->
+  </div> <!-- /#header -->
+
+
+<div id="header2">
+
+<ul id="pagelocation">
+<li><a href="http://wiki.ros.org/ROS">ROS</a></li><li><a class="backlink" href="http://wiki.ros.org/action/fullsearch/ROS/EnvironmentVariables?action=fullsearch&amp;context=180&amp;value=linkto%3A%22ROS%2FEnvironmentVariables%22" rel="nofollow" title="Click to do a full-text search for this title">EnvironmentVariables</a></li>
+</ul>
+
+<div id="locationline">
+</div>
+</div>
+
+<div id="sidebar">
+<h4>ROS 2 Documentation</h4><p>The ROS Wiki is for ROS 1. Are you using ROS 2 (Dashing/Foxy/Rolling)? <a href="http://docs.ros.org/en/rolling/">Check out the ROS 2 Documentation</a></p>
+<div class="sidepanel">
+<h1>Wiki</h1>
+
+<ul id="navibar">
+<li class="wikilink"><a href="http://wiki.ros.org/Distributions">Distributions</a></li><li class="wikilink"><a href="http://wiki.ros.org/ROS/Installation">ROS/Installation</a></li><li class="wikilink"><a href="http://wiki.ros.org/ROS/Tutorials">ROS/Tutorials</a></li><li class="wikilink"><a href="http://wiki.ros.org/RecentChanges">RecentChanges</a></li><li class="current"><a href="http://wiki.ros.org/ROS/EnvironmentVariables">ROS/EnvironmentVariables</a></li>
+</ul>
+
+</div>
+<div class="sidepanel">
+<h1>Page</h1>
+<ul class="editbar"><li><span class="disabled">Immutable Page</span></li><li class="toggleCommentsButton" style="display:none;"><a href="http://wiki.ros.org/ROS/EnvironmentVariables#" class="nbcomment" onclick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="http://wiki.ros.org/action/info/ROS/EnvironmentVariables?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="http://wiki.ros.org/action/AttachFile/ROS/EnvironmentVariables?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="http://wiki.ros.org/ROS/EnvironmentVariables">
+<div>
+    <label>More Actions:</label>
+    <select name="action" onchange="if ((this.selectedIndex != 0) &amp;&amp;
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="RenderAsDocbook">Render as Docbook</option>
+<option value="show" disabled="" class="disabled">Delete Cache</option>
+<option value="show" disabled="" class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled="" class="disabled">------------------------</option>
+<option value="RenamePage" disabled="" class="disabled">Rename Page</option>
+<option value="CopyPage">Copy Page</option>
+<option value="DeletePage" disabled="" class="disabled">Delete Page</option>
+<option value="show" disabled="" class="disabled">------------------------</option>
+<option value="MyPages">My Pages</option>
+<option value="show" disabled="" class="disabled">Subscribe User</option>
+<option value="show" disabled="" class="disabled">------------------------</option>
+<option value="show" disabled="" class="disabled">Remove Spam</option>
+<option value="show" disabled="" class="disabled">Revert to this revision</option>
+<option value="PackagePages">Package Pages</option>
+<option value="SyncPages">Sync Pages</option>
+<option value="show" disabled="" class="disabled">------------------------</option>
+<option value="CreatePdfDocument">CreatePdfDocument</option>
+<option value="Load">Load</option>
+<option value="RawFile">RawFile</option>
+<option value="Save">Save</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    <input type="submit" value="Do">
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+</div>
+<div class="sidepanel">
+<h1>User</h1>
+<ul id="username"><li><a href="http://wiki.ros.org/action/login/ROS/EnvironmentVariables?action=login" id="login" rel="nofollow">Login</a></li></ul>
+</div>
+</div>
+
+<div id="page" lang="en" dir="ltr">
+
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><p class="line867"></p><div class="table-of-contents"><p class="table-of-contents-heading">Contents</p><ol><li>
+<a href="http://wiki.ros.org/ROS/EnvironmentVariables#Required_ROS_Environment_Variables">Required ROS Environment Variables</a><ol><li>
+<a href="http://wiki.ros.org/ROS/EnvironmentVariables#ROS_ROOT">ROS_ROOT</a></li><li>
+<a href="http://wiki.ros.org/ROS/EnvironmentVariables#ROS_MASTER_URI">ROS_MASTER_URI</a></li><li>
+<a href="http://wiki.ros.org/ROS/EnvironmentVariables#PYTHONPATH">PYTHONPATH</a></li></ol></li><li>
+<a href="http://wiki.ros.org/ROS/EnvironmentVariables#Additional_PATH_Environment_Variables">Additional PATH Environment Variables</a><ol><li>
+<a href="http://wiki.ros.org/ROS/EnvironmentVariables#ROS_PACKAGE_PATH">ROS_PACKAGE_PATH</a></li></ol></li><li>
+<a href="http://wiki.ros.org/ROS/EnvironmentVariables#System_Data_Environment_Variables">System Data Environment Variables</a><ol><li>
+<a href="http://wiki.ros.org/ROS/EnvironmentVariables#ROS_HOME">ROS_HOME</a></li><li>
+<a href="http://wiki.ros.org/ROS/EnvironmentVariables#ROS_LOG_DIR">ROS_LOG_DIR</a></li><li>
+<a href="http://wiki.ros.org/ROS/EnvironmentVariables#ROS_TEST_RESULTS_DIR">ROS_TEST_RESULTS_DIR</a></li><li>
+<a href="http://wiki.ros.org/ROS/EnvironmentVariables#ROS_CACHE_TIMEOUT">ROS_CACHE_TIMEOUT</a></li></ol></li><li>
+<a href="http://wiki.ros.org/ROS/EnvironmentVariables#Additional_Bash_Environment_Variables">Additional Bash Environment Variables</a><ol><li>
+<a href="http://wiki.ros.org/ROS/EnvironmentVariables#ROS_LOCATIONS">ROS_LOCATIONS</a></li><li>
+<a href="http://wiki.ros.org/ROS/EnvironmentVariables#ROS_WORKSPACE">ROS_WORKSPACE</a></li></ol></li><li>
+<a href="http://wiki.ros.org/ROS/EnvironmentVariables#Node_Environment_Variables">Node Environment Variables</a><ol><li>
+<a href="http://wiki.ros.org/ROS/EnvironmentVariables#ROS_IP.2FROS_HOSTNAME">ROS_IP/ROS_HOSTNAME</a></li><li>
+<a href="http://wiki.ros.org/ROS/EnvironmentVariables#ROS_NAMESPACE">ROS_NAMESPACE</a></li><li>
+<a href="http://wiki.ros.org/ROS/EnvironmentVariables#ROSCONSOLE_CONFIG_FILE">ROSCONSOLE_CONFIG_FILE</a></li><li>
+<a href="http://wiki.ros.org/ROS/EnvironmentVariables#Console_Output_Formatting">Console Output Formatting</a></li><li>
+<a href="http://wiki.ros.org/ROS/EnvironmentVariables#ROS_PYTHON_LOG_CONFIG_FILE">ROS_PYTHON_LOG_CONFIG_FILE</a></li></ol></li><li>
+<a href="http://wiki.ros.org/ROS/EnvironmentVariables#Build_System_Environment_Variables">Build System Environment Variables</a><ol><li>
+<a href="http://wiki.ros.org/ROS/EnvironmentVariables#ROS_BOOST_ROOT">ROS_BOOST_ROOT</a></li><li>
+<a href="http://wiki.ros.org/ROS/EnvironmentVariables#ROS_PARALLEL_JOBS">ROS_PARALLEL_JOBS</a></li><li>
+<a href="http://wiki.ros.org/ROS/EnvironmentVariables#ROS_LANG_DISABLE">ROS_LANG_DISABLE</a></li><li>
+<a href="http://wiki.ros.org/ROS/EnvironmentVariables#ROS_OS_OVERRIDE">ROS_OS_OVERRIDE</a></li></ol></li></ol></div><p class="line874"> <span class="anchor" id="line-2"></span><span class="anchor" id="line-3"></span></p><p class="line862">There are many environment variables that you can set to affect the behavior of ROS. Of these, the most important to understand are <tt class="backtick">ROS_MASTER_URI</tt>, <tt class="backtick">ROS_ROOT</tt>, and <tt class="backtick">ROS_PACKAGE_PATH</tt> as they are commonly used in the system and frequently mentioned in documentation. <span class="anchor" id="line-4"></span><span class="anchor" id="line-5"></span></p><p class="line874">Environment variables serve a variety of roles in ROS: <span class="anchor" id="line-6"></span><span class="anchor" id="line-7"></span></p><ul><li><p class="line891"><em>Finding packages</em>: First and foremost, the <tt class="backtick">ROS_ROOT</tt> and <tt class="backtick">ROS_PACKAGE_PATH</tt> enable ROS to locate <a href="http://wiki.ros.org/Packages">packages</a> and <a href="http://wiki.ros.org/Stacks">stacks</a> in the filesystem. You must also set the <tt class="backtick">PYTHONPATH</tt> so that the Python interpreter can find ROS libraries. <span class="anchor" id="line-8"></span></p></li><li><p class="line891"><em>Effecting a Node runtime</em>: There are also several ROS environment variables that effect how a Node runs. The <tt class="backtick">ROS_MASTER_URI</tt> is an important environment variable that tells a Node where the <a href="http://wiki.ros.org/Master">Master</a> is. <tt class="backtick">ROS_IP</tt> and <tt class="backtick">ROS_HOSTNAME</tt> affect the network address of a Node and <tt class="backtick">ROS_NAMESPACE</tt> lets you change its namespace. <tt class="backtick">ROS_LOG_DIR</tt> lets you set the directory where log files are written. Many of these can be overridden by <a href="http://wiki.ros.org/Remapping%20Arguments">Remapping Arguments</a> as well, which have precedence over environment variables. <span class="anchor" id="line-9"></span></p></li><li><p class="line891"><em>Modifying the build system</em>: <tt class="backtick">ROS_BINDEPS_PATH</tt>, <tt class="backtick">ROS_BOOST_ROOT</tt>, <tt class="backtick">ROS_PARALLEL_JOBS</tt>, and <tt class="backtick">ROS_LANG_DISABLE</tt> affect where libraries are found, how they are built, and which ones are built. <span class="anchor" id="line-10"></span><span class="anchor" id="line-11"></span></p></li></ul><p class="line874">These environment variables and more are described in greater detail below. <span class="anchor" id="line-12"></span><span class="anchor" id="line-13"></span></p><p class="line867">
+</p><h1 id="Required_ROS_Environment_Variables">Required ROS Environment Variables</h1>
+<span class="anchor" id="line-14"></span><p class="line862">Most systems will also have <tt class="backtick">ROS_PACKAGE_PATH</tt> set, but the only required environment variables for ROS are <tt class="backtick">ROS_ROOT</tt>, <tt class="backtick">ROS_MASTER_URI</tt>, and <tt class="backtick">PYTHONPATH</tt>. By default these are automatically set for you by sourcing /opt/ros/ROSDISTRO/setup.bash. (Replace ROSDISTRO with the desired ROS distribution, e.g. indigo.) <span class="anchor" id="line-15"></span><span class="anchor" id="line-16"></span></p><p class="line867">
+</p><h2 id="ROS_ROOT">ROS_ROOT</h2>
+<span class="anchor" id="line-17"></span><p class="line867"><tt class="backtick">ROS_ROOT</tt> sets the location where the ROS core packages are installed. <span class="anchor" id="line-18"></span><span class="anchor" id="line-19"></span></p><p class="line867"><span class="anchor" id="line-20"></span><span class="anchor" id="line-21"></span><span class="anchor" id="line-22"></span></p><pre><span class="anchor" id="line-1-1"></span>export ROS_ROOT=/home/user/ros/ros
+<span class="anchor" id="line-2-1"></span>export PATH=$ROS_ROOT/bin:$PATH</pre><span class="anchor" id="line-23"></span><p class="line867">
+</p><h2 id="ROS_MASTER_URI">ROS_MASTER_URI</h2>
+<span class="anchor" id="line-24"></span><p class="line867"><tt class="backtick">ROS_MASTER_URI</tt> is a required setting that tells nodes where they can locate the master. It should be set to the XML-RPC URI of the master. Great care should be taken when using <tt class="backtick">localhost</tt>, as that can lead to unintended behaviors with remotely launched nodes. <span class="anchor" id="line-25"></span><span class="anchor" id="line-26"></span></p><p class="line867"><span class="anchor" id="line-27"></span><span class="anchor" id="line-28"></span></p><pre><span class="anchor" id="line-1-2"></span>export ROS_MASTER_URI=http://mia:11311/</pre><span class="anchor" id="line-29"></span><p class="line867">
+</p><h2 id="PYTHONPATH">PYTHONPATH</h2>
+<span class="anchor" id="line-30"></span><p class="line862">ROS requires that your <tt class="backtick">PYTHONPATH</tt> be updated, <strong>even if you don't program in Python!</strong> Many ROS infrastructure tools rely on Python and need access to the <a href="http://wiki.ros.org/roslib">roslib</a> package for bootstrapping. <span class="anchor" id="line-31"></span><span class="anchor" id="line-32"></span></p><p class="line867"><span class="anchor" id="line-33"></span><span class="anchor" id="line-34"></span></p><pre><span class="anchor" id="line-1-3"></span>export PYTHONPATH=$PYTHONPATH:$ROS_ROOT/core/roslib/src</pre><span class="anchor" id="line-35"></span><p class="line867">
+</p><h1 id="Additional_PATH_Environment_Variables">Additional PATH Environment Variables</h1>
+<span class="anchor" id="line-36"></span><p class="line867">
+</p><h2 id="ROS_PACKAGE_PATH">ROS_PACKAGE_PATH</h2>
+<span class="anchor" id="line-37"></span><p class="line867"><tt class="backtick">ROS_PACKAGE_PATH</tt> is an optional, but very common environment variable that allows you to add more ROS packages from source to your environment. <tt class="backtick">ROS_PACKAGE_PATH</tt> can be composed of one or more paths separated by your standard OS path separator (e.g. ':' on Unix-like systems). These <em>ordered</em> paths tell the ROS system where to search for more ROS packages. If there are multiple packages of the same name, ROS will choose the one that appears on <tt class="backtick">ROS_PACKAGE_PATH</tt> <em>first</em>. <span class="anchor" id="line-38"></span><span class="anchor" id="line-39"></span></p><p class="line867"><span class="anchor" id="line-40"></span><span class="anchor" id="line-41"></span></p><pre><span class="anchor" id="line-1-4"></span>export ROS_PACKAGE_PATH=/home/user/ros/ros-pkg:/another/path</pre><span class="anchor" id="line-42"></span><p class="line862">Note that each entry in <tt class="backtick">ROS_PACKAGE_PATH</tt> is searched recursively--all ROS packages below the named path will be found. <span class="anchor" id="line-43"></span><span class="anchor" id="line-44"></span></p><p class="line862">With the introduction of catkin, the need to manually update <tt class="backtick">ROS_PACKAGE_PATH</tt> becomes obsolete, and is only necessary for backwards compatibility with rosbuild packages. <span class="anchor" id="line-45"></span><span class="anchor" id="line-46"></span></p><p class="line867">
+</p><h1 id="System_Data_Environment_Variables">System Data Environment Variables</h1>
+<span class="anchor" id="line-47"></span><p class="line867">
+</p><h2 id="ROS_HOME">ROS_HOME</h2>
+<span class="anchor" id="line-48"></span><p class="line862">By default, ROS writes data to <tt class="backtick">~/.ros</tt>. This location can be changed by setting an optional <tt class="backtick">ROS_HOME</tt>. You can also change the location of certain individual directories in <tt class="backtick">~/.ros</tt> (e.g. <tt class="backtick">ROS_TEST_RESULTS_DIR</tt>, <tt class="backtick">ROS_LOG_DIR</tt>). <span class="anchor" id="line-49"></span><span class="anchor" id="line-50"></span></p><p class="line867">
+</p><h2 id="ROS_LOG_DIR">ROS_LOG_DIR</h2>
+<span class="anchor" id="line-51"></span><p class="line874">By default, ROS writes internal log files to ROS_HOME/log. If this location is not writable to ROS, or if you wish for log files to be written elsewhere, set ROS_LOG_DIR to that path. <span class="anchor" id="line-52"></span><span class="anchor" id="line-53"></span></p><p class="line867">
+</p><h2 id="ROS_TEST_RESULTS_DIR">ROS_TEST_RESULTS_DIR</h2>
+<span class="anchor" id="line-54"></span><p class="line874">Directory that test results should be written to. <span class="anchor" id="line-55"></span><span class="anchor" id="line-56"></span></p><p class="line867">
+</p><h2 id="ROS_CACHE_TIMEOUT">ROS_CACHE_TIMEOUT</h2>
+<span class="anchor" id="line-57"></span><span class="anchor" id="line-58"></span><p class="line862">(See <a class="http" href="http://docs.ros.org/independent/api/rospkg/html/rospack.html#efficiency-considerations">rospack's api doc</a> for the detail). <span class="anchor" id="line-59"></span><span class="anchor" id="line-60"></span></p><p class="line867"><a href="http://wiki.ros.org/rospack">rospack</a> re-parses the <tt class="backtick">package.xml</tt> files and rebuilds the dependency tree on each execution. However, it maintains a cache of package directories in <tt class="backtick">ROS_ROOT/.rospack_cache</tt>. This cache is updated whenever there is a cache miss, or when the cache is 60 seconds old. You can change this timeout by setting the environment variable <tt class="backtick">ROS_CACHE_TIMEOUT</tt>, in seconds. Set it to 0.0 to force a cache rebuild on every invocation of <tt class="backtick">rospack</tt>. <span class="anchor" id="line-61"></span><span class="anchor" id="line-62"></span></p><p class="line867">
+</p><h1 id="Additional_Bash_Environment_Variables">Additional Bash Environment Variables</h1>
+<span class="anchor" id="line-63"></span><p class="line867">
+</p><h2 id="ROS_LOCATIONS">ROS_LOCATIONS</h2>
+<span class="anchor" id="line-64"></span><p class="line867"><tt class="backtick">ROS_LOCATIONS</tt> is an optional environment variable that provides keyed names for useful locations.  It is a <tt>:</tt> separated list of key-location pairs.  Each key-location pair is separated by an <tt>=</tt>.  For example: <span class="anchor" id="line-65"></span><span class="anchor" id="line-66"></span></p><p class="line867"><span class="anchor" id="line-67"></span><span class="anchor" id="line-68"></span></p><pre><span class="anchor" id="line-1-5"></span>export ROS_LOCATIONS="rospkg=/path/to/rospkg:stairpkg=/path/to/stairpkg"</pre><span class="anchor" id="line-69"></span><p class="line874">These keys can then be used in tools such as roscd. <span class="anchor" id="line-70"></span><span class="anchor" id="line-71"></span></p><p class="line867">
+</p><h2 id="ROS_WORKSPACE">ROS_WORKSPACE</h2>
+<span class="anchor" id="line-72"></span><p class="line867"><tt class="backtick">ROS_WORKSPACE</tt> is introduced by the rosinstall / rosws tools, it is set by setup.sh that is generated by these tools when creating a workspace. It points to the folder of the workspace and is used by the rosws command as a default target of the command. <span class="anchor" id="line-73"></span><span class="anchor" id="line-74"></span></p><p class="line862">The roscd tool in fuerte was also changed to use that variable when called without arguments. Previously it had defaulted to change to <tt class="backtick">ROS_ROOT</tt>. <span class="anchor" id="line-75"></span><span class="anchor" id="line-76"></span></p><p class="line867">
+</p><h1 id="Node_Environment_Variables">Node Environment Variables</h1>
+<span class="anchor" id="line-77"></span><p class="line867">
+</p><h2 id="ROS_IP.2FROS_HOSTNAME">ROS_IP/ROS_HOSTNAME</h2>
+<span class="anchor" id="line-78"></span><p class="line867"><tt class="backtick">ROS_IP</tt> and <tt class="backtick">ROS_HOSTNAME</tt> are optional environment variable that sets the declared network address of a ROS <a class="nonexistent" href="http://wiki.ros.org/Node">Node</a> or tool. The options are mutually exclusive, if both are set <tt class="backtick">ROS_HOSTNAME</tt> will take precedence. Use <tt class="backtick">ROS_IP</tt> if you are specifying an IP address, and <tt class="backtick">ROS_HOSTNAME</tt> if you are specifying a host name. When a ROS component reports a URI to the master or other components, this value will be used. This setting is only needed in situations where you have multiple addresses for a computer and need to force ROS to a particular one. <span class="anchor" id="line-79"></span><span class="anchor" id="line-80"></span></p><p class="line862">With the exception of 'localhost', it does <em>not</em> affect the actual bound address as ROS components bind to all available network interfaces. If the value is set to localhost, the ROS component will bind only to the loopback interface. This will prevent remote components from being able to talk to your local component. <span class="anchor" id="line-81"></span><span class="anchor" id="line-82"></span></p><p class="line867">
+</p><h2 id="ROS_NAMESPACE">ROS_NAMESPACE</h2>
+<span class="anchor" id="line-83"></span><p class="line867"><tt class="backtick">ROS_NAMESPACE</tt> lets you <em>push down</em> a Node into a namespace. All of the names in the Node will be resolved relative to this value, including remapped names. <span class="anchor" id="line-84"></span><span class="anchor" id="line-85"></span></p><p class="line867">
+</p><h2 id="ROSCONSOLE_CONFIG_FILE">ROSCONSOLE_CONFIG_FILE</h2>
+<span class="anchor" id="line-86"></span><p class="line862">This is a <a href="http://wiki.ros.org/roscpp">roscpp</a>-specific environment variable. <a href="http://wiki.ros.org/rosconsole">rosconsole</a> lets you define your own configuration file that will be used by log4cxx, defined by the ROSCONSOLE_CONFIG_FILE environment variable. Anything defined in this config file will override the default config file. <span class="anchor" id="line-87"></span><span class="anchor" id="line-88"></span></p><p class="line862">See <a class="http" href="http://ros.org/doc/api/rosconsole/html/index.html">http://ros.org/doc/api/rosconsole/html/index.html</a> for more information. <span class="anchor" id="line-89"></span><span class="anchor" id="line-90"></span></p><p class="line867">
+</p><h2 id="Console_Output_Formatting">Console Output Formatting</h2>
+<span class="anchor" id="line-91"></span><p class="line862">rosconsole allows you to specify how you'd like its output to show up in the console output through the <tt class="backtick">ROSCONSOLE_FORMAT</tt> environment variable.  The default is equivalent to: <span class="anchor" id="line-92"></span><span class="anchor" id="line-93"></span></p><p class="line867"><span class="anchor" id="line-94"></span><span class="anchor" id="line-95"></span></p><pre><span class="anchor" id="line-1-6"></span>export ROSCONSOLE_FORMAT='[${severity}] [${time}]: ${message}'</pre><span class="anchor" id="line-96"></span><p class="line862">See <a class="http" href="http://ros.org/doc/api/rosconsole/html/index.html">http://ros.org/doc/api/rosconsole/html/index.html</a> for more information on this package in general. You can see the list of parsed format strings <a class="http" href="http://docs.ros.org/api/rosconsole/html/namespaceros_1_1console.html#a002c0a7a505520666bc6e9362677fd93">in the source code</a>. <span class="anchor" id="line-97"></span><span class="anchor" id="line-98"></span></p><p class="line867">
+</p><h2 id="ROS_PYTHON_LOG_CONFIG_FILE">ROS_PYTHON_LOG_CONFIG_FILE</h2>
+<span class="anchor" id="line-99"></span><p class="line862">This is specific to <a href="http://wiki.ros.org/rospy">rospy</a>, <a href="http://wiki.ros.org/rosmaster">rosmaster</a>, <a href="http://wiki.ros.org/roslaunch">roslaunch</a>, and <a href="http://wiki.ros.org/rostest">rostest</a>. For these tools, you can define your own Python <tt class="backtick">logging</tt> configuration file to use instead of the default config file, which is stored in <tt class="backtick">$ROS_ROOT/config/python_logging.conf</tt>. <span class="anchor" id="line-100"></span><span class="anchor" id="line-101"></span></p><p class="line862">For more information, see the Python <tt class="backtick">logging</tt> documentation: <span class="anchor" id="line-102"></span><span class="anchor" id="line-103"></span></p><p class="line867"><a class="http" href="http://docs.python.org/library/logging.html">http://docs.python.org/library/logging.html</a> <span class="anchor" id="line-104"></span><span class="anchor" id="line-105"></span></p><p class="line867">
+</p><h1 id="Build_System_Environment_Variables">Build System Environment Variables</h1>
+<span class="anchor" id="line-106"></span><p class="line862">In order to understand these environment variables better, please see the section on the <a href="http://wiki.ros.org/ROS/BuildSystem">ROS Build System</a>. <span class="anchor" id="line-107"></span><span class="anchor" id="line-108"></span></p><p class="line867">
+</p><h2 id="ROS_BOOST_ROOT">ROS_BOOST_ROOT</h2>
+<span class="anchor" id="line-109"></span><p class="line867"><tt class="backtick">ROS_BOOST_ROOT</tt> is an optional environment variable that lets you override where to search for boost.  If <tt class="backtick">ROS_BOOST_ROOT</tt> is not set it defaults to using <tt class="backtick">ROS_BINDEPS_PATH</tt> <span class="anchor" id="line-110"></span><span class="anchor" id="line-111"></span></p><p class="line867">
+</p><h2 id="ROS_PARALLEL_JOBS">ROS_PARALLEL_JOBS</h2>
+<span class="anchor" id="line-112"></span><p class="line862">The value of this variable, if set, is passed to <tt class="backtick">make</tt> when building packages.  The idea is to let you exploit a multi-processor machine.  For example, if you have 8 processors / cores and want to run as many parallel jobs as possible, as long as the system load is less than 8, by limiting the jobs to 8 you prevent overshoot at startup time: <span class="anchor" id="line-113"></span><span class="anchor" id="line-114"></span></p><p class="line867"><span class="anchor" id="line-115"></span><span class="anchor" id="line-116"></span></p><pre><span class="anchor" id="line-1-7"></span>export ROS_PARALLEL_JOBS='-j8 -l8'</pre><span class="anchor" id="line-117"></span><p class="line862">Alternatively, you could use the <tt class="backtick">-j</tt> flag with an argument to run up to 8 jobs in parallel, independent of system load: <span class="anchor" id="line-118"></span><span class="anchor" id="line-119"></span></p><p class="line867"><span class="anchor" id="line-120"></span><span class="anchor" id="line-121"></span></p><pre><span class="anchor" id="line-1-8"></span>export ROS_PARALLEL_JOBS=-j8</pre><span class="anchor" id="line-122"></span><p class="line862">We <strong>strongly</strong> recommend using the <tt class="backtick">-l</tt> flag to set a system load-dependent limit on parallelism.  Excessive parallelism in a large build can exhaust system memory. <span class="anchor" id="line-123"></span><span class="anchor" id="line-124"></span></p><p class="line862">What system load is acceptable to you depends on how many cores you have: <a class="http" href="http://blog.scoutapp.com/articles/2009/07/31/understanding-load-averages">http://blog.scoutapp.com/articles/2009/07/31/understanding-load-averages</a> <span class="anchor" id="line-125"></span><span class="anchor" id="line-126"></span></p><p class="line874">So 8 might be suitable for a machine with 8 cores. <span class="anchor" id="line-127"></span><span class="anchor" id="line-128"></span></p><p class="line867">
+</p><h2 id="ROS_LANG_DISABLE">ROS_LANG_DISABLE</h2>
+<span class="anchor" id="line-129"></span><p class="line874">A colon-separated list of package names for message generators / client libraries that should be disabled.  Message-generation will not happen for languages in this list. <span class="anchor" id="line-130"></span><span class="anchor" id="line-131"></span></p><p class="line862">For packages build with <strong>catkin</strong> you need to list the names of the message generators which should be ignored, e.g.: <span class="anchor" id="line-132"></span><span class="anchor" id="line-133"></span></p><p class="line867"><span class="anchor" id="line-134"></span><span class="anchor" id="line-135"></span></p><pre><span class="anchor" id="line-1-9"></span>export ROS_LANG_DISABLE=genlisp</pre><span class="anchor" id="line-136"></span><p class="line862">For packages build with <strong>rosbuild</strong> you need to list the names of the message generators <em>as well as</em> the client libraries which should be ignored, e.g.: <span class="anchor" id="line-137"></span><span class="anchor" id="line-138"></span></p><p class="line867"><span class="anchor" id="line-139"></span><span class="anchor" id="line-140"></span></p><pre><span class="anchor" id="line-1-10"></span>export ROS_LANG_DISABLE=genlisp:roslisp</pre><span class="anchor" id="line-141"></span><p class="line862">When ignoring message generators with rosbuild the CMake configure step will show a warning that the client library (e.g. <tt class="backtick">roslisp</tt>) is not a known message generator. This warning can safely be ignored. <span class="anchor" id="line-142"></span><span class="anchor" id="line-143"></span></p><p class="line874">Note that before disabling a language, you should first be very sure that none of the code you're using requires that language's bindings. <span class="anchor" id="line-144"></span><span class="anchor" id="line-145"></span></p><p class="line867">
+</p><h2 id="ROS_OS_OVERRIDE">ROS_OS_OVERRIDE</h2>
+<span class="anchor" id="line-146"></span><p class="line874">Format: "OS_NAME:OS_VERSION_STRING:OS_CODENAME" This will force it to detect Ubuntu Bionic: <span class="anchor" id="line-147"></span><span class="anchor" id="line-148"></span></p><p class="line867"><span class="anchor" id="line-149"></span><span class="anchor" id="line-150"></span></p><pre><span class="anchor" id="line-1-11"></span>export ROS_OS_OVERRIDE=ubuntu:18.04:bionic</pre><span class="anchor" id="line-151"></span><p class="line874">If defined, this will override the autodetection of an OS.  This can be useful when debugging rosdep dependencies on alien platforms, when platforms are actually very similar and might need be forced, or of course if the autodetection is failing. <span class="anchor" id="line-152"></span><span class="anchor" id="bottom"></span></p></div></div>
+<div id="pagebottom"></div>
+</div>
+
+<p id="pageinfo" class="info" lang="en" dir="ltr">Wiki: ROS/EnvironmentVariables  (last edited 2019-09-13 13:17:31 by <span title="BryceWilley @ 104.238.237.109[104.238.237.109]"><a href="http://wiki.ros.org/BryceWilley" title="BryceWilley @ 104.238.237.109[104.238.237.109]">BryceWilley</a></span>)</p>
+
+
+
+
+<div style="margin-top: 9px;" class="footer">
+Except where otherwise noted, the ROS wiki is licensed under the <br><a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>
+<hr style="margin-top: 10px;">
+<div class="row">
+  <div class="col-md-4 col-md-offset-4">
+<a href="https://www.openrobotics.org/"><img style="margin-top: -1px;" src="./ROS_EnvironmentVariables - ROS Wiki_files/brought_by_horiz.png"><p></p></a>
+  </div>
+</div>
+</div>
+
+  </div> <!-- /#dpage-inner, /#dpage -->
+
+
+
+
+
+</body></html>
