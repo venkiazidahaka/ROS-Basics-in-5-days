@@ -1,0 +1,5 @@
+<launch>
+  <!-- turtlebot_teleop_key already has its own built in velocity smoother -->
+  <node pkg="my_examples_pkg" type="ex4_2.py" name="odom_node" output="screen">
+  </node>
+</launch>
